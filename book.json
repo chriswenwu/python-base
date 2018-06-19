@@ -26,7 +26,9 @@
     "donate",
     "sharing-plus",
     "anchor-navigation-ex",
-    "favicon"
+    "favicon",
+    "toggle-chapters",
+    "disqus"
   ],
   "pluginsConfig": {
     "github": {
@@ -81,6 +83,9 @@
         "120x120": "./source/images/apple-touch-icon.jpg",
         "180x180": "./source/images/apple-touch-icon.jpg"
       }
+    },
+    "disqus": {
+      "shortName": "gitbookuse"
     }
   }
 }
