@@ -2,7 +2,7 @@
 
 * [python基础到进阶](README.md)
 
-* [第一章:环境的配置]()
+* [第一章: 环境的配置]()
   * [1、关于python环境的安装]()
     * [1.1 window系统下环境python的安装](chapter01/1.1.md)
     * [1.2 mac系统下python的安装](chapter01/1.2.md)
