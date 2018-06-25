@@ -350,7 +350,7 @@
                 <a href="6.html">
             
                     
-                    6.数据类型转换
+                    6.集合类型
             
                 </a>
             
@@ -363,7 +363,20 @@
                 <a href="7.html">
             
                     
-                    7.解压序列(解包)
+                    7.数据类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8.解压序列(解包)
             
                 </a>
             
@@ -978,7 +991,104 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#5"><b></b>5</a></li></ul></div><a href="#5" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="5"><a name="5" class="anchor-navigation-ex-anchor" href="#5"><i class="fa fa-link" aria-hidden="true"></i></a><a name="5" class="plugin-anchor" href="#5"><i class="fa fa-link" aria-hidden="true"></i></a>5</h1>
+                                <h2 id="&#x5B57;&#x5178;&#x7C7B;&#x578B;"><a name="&#x5B57;&#x5178;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x5178;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B57;&#x5178;&#x7C7B;&#x578B;" class="plugin-anchor" href="#&#x5B57;&#x5178;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><center>&#x5B57;&#x5178;&#x7C7B;&#x578B;</center></h2>
+<blockquote>
+<p>&#x5B57;&#x5178;&#x7C7B;&#x578B;&#x6709;&#x70B9;&#x7C7B;&#x4F3C;<code>javascript</code>&#x4E2D;&#x662F;&#x5BF9;&#x8C61;,&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x7406;&#x89E3;&#x4E3A;&#x5BF9;&#x8C61;</p>
+</blockquote>
+<h3 id="&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x5F0F;"><a name="&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x5F0F;" class="plugin-anchor" href="#&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x5F0F;</h3>
+<ul>
+<li><p>1&#x3001;&#x76F4;&#x63A5;&#x521B;&#x5EFA;</p>
+<pre><code class="lang-py">dict1 = {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;&#x54C8;&#x54C8;&apos;</span>, <span class="hljs-string">&apos;gender&apos;</span>: <span class="hljs-string">&apos;&#x7537;&apos;</span>}
+</code></pre>
+</li>
+<li><p>2&#x3001;&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x5B9E;&#x4F8B;&#x5316;</p>
+<pre><code class="lang-py">dict2 = dict(name=<span class="hljs-string">&apos;&#x54C8;&#x54C8;&apos;</span>, gender=<span class="hljs-string">&apos;&#x7537;&apos;</span>)
+print(type(dict2))
+
+dict3 = dict([(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;&#x54C8;&#x54C8;&apos;</span>), (<span class="hljs-string">&apos;gender&apos;</span>, <span class="hljs-string">&apos;&#x7537;&apos;</span>)])
+print(type(dict3))
+</code></pre>
+</li>
+<li><p>3&#x3001;&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x7684;<code>fromkeys</code>&#x6765;&#x521B;&#x5EFA;&#x5B57;&#x5178;</p>
+<pre><code class="lang-py">dict4 = dict.fromkeys([<span class="hljs-string">&apos;aa&apos;</span>, <span class="hljs-string">&apos;bb&apos;</span>], <span class="hljs-string">&apos;&#x9ED8;&#x8BA4;&#x503C;&apos;</span>)
+print(dict4)
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4E8C;&#x3001;&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5C5E;&#x6027;"><a name="&#x4E8C;&#x3001;&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E8C;&#x3001;&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5C5E;&#x6027;" class="plugin-anchor" href="#&#x4E8C;&#x3001;&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;/&#x5C5E;&#x6027;</h3>
+<ul>
+<li><p>1&#x3001;&#x53D6;&#x503C;</p>
+<pre><code class="lang-py"><span class="hljs-comment"># &#x53D6;&#x503C;</span>
+print(dict1[<span class="hljs-string">&apos;name&apos;</span>])
+<span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x53D6;&#x503C;</span>
+print(dict1.get(<span class="hljs-string">&apos;name&apos;</span>))
+</code></pre>
+</li>
+<li><p>2&#x3001;&#x65B0;&#x589E;&#x503C;</p>
+<pre><code class="lang-py"><span class="hljs-comment"># &#x8D4B;&#x503C;</span>
+dict1[<span class="hljs-string">&apos;address&apos;</span>] = <span class="hljs-string">&apos;&#x5E7F;&#x4E1C;&apos;</span>
+print(dict1)
+</code></pre>
+</li>
+<li><p>3&#x3001;&#x5220;&#x9664;&#x5B57;&#x6BB5;</p>
+<pre><code class="lang-py"><span class="hljs-comment"># &#x5220;&#x9664;&#x5B57;&#x6BB5;</span>
+<span class="hljs-keyword">del</span> dict1[<span class="hljs-string">&apos;address&apos;</span>]
+print(dict1)
+</code></pre>
+</li>
+<li><p>4&#x3001;&#x4F7F;&#x7528;<code>in/not in</code>&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5728;&#x5B57;&#x5178;&#x91CC;</p>
+<pre><code class="lang-py"><span class="hljs-comment"># &#x5224;&#x65AD;&#x662F;&#x5426;&#x5728;&#x5B57;&#x5178;&#x91CC;&#x9762;</span>
+print(<span class="hljs-string">&apos;name&apos;</span> <span class="hljs-keyword">in</span> dict1)
+</code></pre>
+</li>
+<li><p>5&#x3001;&#x4F7F;&#x7528;<code>keys()</code>&#x63D0;&#x53D6;&#x5168;&#x90E8;&#x7684;<code>key</code>,&#x4F7F;&#x7528;<code>values()</code>&#x63D0;&#x53D6;&#x5168;&#x90E8;&#x7684;<code>value</code></p>
+</li>
+<li><p>6&#x3001;<code>clear()</code>&#x6E05;&#x7A7A;&#x5B57;&#x5178;</p>
+<pre><code class="lang-py">dict3 = dict([(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;&#x54C8;&#x54C8;&apos;</span>), (<span class="hljs-string">&apos;gender&apos;</span>, <span class="hljs-string">&apos;&#x7537;&apos;</span>)])
+print(type(dict3))
+
+dict3.clear()
+print(dict3)
+</code></pre>
+</li>
+<li><p>7&#x3001;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;<code>key</code></p>
+<pre><code class="lang-py">print(dict1.pop(<span class="hljs-string">&apos;name&apos;</span>))
+</code></pre>
+</li>
+<li><p>8&#x3001;&#x4FEE;&#x6539;&#x5B57;&#x5178;&#x7684;&#x503C;</p>
+<pre><code class="lang-py">dict1.update({<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;&#x563B;&#x563B;&apos;</span>})
+print(dict1)
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4E09;&#x3001;&#x904D;&#x5386;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x6CD5;"><a name="&#x4E09;&#x3001;&#x904D;&#x5386;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x904D;&#x5386;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E09;&#x3001;&#x904D;&#x5386;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x6CD5;" class="plugin-anchor" href="#&#x4E09;&#x3001;&#x904D;&#x5386;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x904D;&#x5386;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><p>1&#x3001;&#x76F4;&#x63A5;&#x904D;&#x5386;</p>
+<pre><code class="lang-py">dict5 = dict([(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;&#x54C8;&#x54C8;&apos;</span>), (<span class="hljs-string">&apos;gender&apos;</span>, <span class="hljs-string">&apos;&#x7537;&apos;</span>)])
+
+<span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> dict5:
+    print(key, dict5[key])
+</code></pre>
+</li>
+<li><p>2&#x3001;&#x4F7F;&#x7528;<code>keys()</code></p>
+<pre><code class="lang-py"><span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> dict5.keys():
+    print(key, dict5[key])
+</code></pre>
+</li>
+<li><p>3&#x3001;&#x4F7F;&#x7528;<code>vulues()</code></p>
+<pre><code class="lang-py"><span class="hljs-keyword">for</span> val <span class="hljs-keyword">in</span> dict5.values():
+    print(val)
+</code></pre>
+</li>
+<li><p>4&#x3001;&#x4F7F;&#x7528;<code>item()</code>&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-py"><span class="hljs-keyword">for</span> val <span class="hljs-keyword">in</span> dict5.items():
+    print(val)
+
+<span class="hljs-keyword">for</span> key, val <span class="hljs-keyword">in</span> dict5.items():
+    print(key, val)
+</code></pre>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -1011,7 +1121,7 @@
                 </a>
                 
                 
-                <a href="6.html" class="navigation navigation-next " aria-label="Next page: 6.数据类型转换">
+                <a href="6.html" class="navigation navigation-next " aria-label="Next page: 6.集合类型">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1022,7 +1132,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.字典类型","level":"1.3.5","depth":2,"next":{"title":"6.数据类型转换","level":"1.3.6","depth":2,"path":"chapter02/6.md","ref":"chapter02/6.md","articles":[]},"previous":{"title":"4.列表类型","level":"1.3.4","depth":2,"path":"chapter02/4.md","ref":"chapter02/4.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","toggle-chapters","disqus","livereload"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/kuangshp/"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.jpeg","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"kuangshp","repo":"python-base","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"水痕","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python基础到进阶","language":"zh-hans","links":{"sidebar":{"我的CSDN博客":"https://blog.csdn.net/kuangshp128"}},"gitbook":"3.2.3","description":"一本通俗易懂的python基础到进阶教程"},"file":{"path":"chapter02/5.md","mtime":"2018-06-19T08:47:16.985Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-25T08:23:45.685Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.字典类型","level":"1.3.5","depth":2,"next":{"title":"6.集合类型","level":"1.3.6","depth":2,"path":"chapter02/6.md","ref":"chapter02/6.md","articles":[]},"previous":{"title":"4.列表类型","level":"1.3.4","depth":2,"path":"chapter02/4.md","ref":"chapter02/4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","toggle-chapters","disqus","livereload"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/kuangshp/"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.jpeg","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"kuangshp","repo":"python-base","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"水痕","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python基础到进阶","language":"zh-hans","links":{"sidebar":{"我的CSDN博客":"https://blog.csdn.net/kuangshp128"}},"gitbook":"3.2.3","description":"一本通俗易懂的python基础到进阶教程"},"file":{"path":"chapter02/5.md","mtime":"2018-06-25T10:02:15.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-25T08:23:45.685Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
