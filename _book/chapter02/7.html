@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>7.数据类型转换 · python基础到进阶</title>
+        <title>7.解压序列(解包) · python基础到进阶</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -75,7 +75,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="8.html" />
+    <link rel="next" href="../chapter03/1.html" />
     
     
     <link rel="prev" href="6.html" />
@@ -363,20 +363,7 @@
                 <a href="7.html">
             
                     
-                    7.数据类型转换
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.8" data-path="8.html">
-            
-                <a href="8.html">
-            
-                    
-                    8.解压序列(解包)
+                    7.解压序列(解包)
             
                 </a>
             
@@ -976,7 +963,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >7.数据类型转换</a>
+        <a href=".." >7.解压序列(解包)</a>
     </h1>
 </div>
 
@@ -991,7 +978,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#7"><b></b>7</a></li></ul></div><a href="#7" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="7"><a name="7" class="anchor-navigation-ex-anchor" href="#7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="7" class="plugin-anchor" href="#7"><i class="fa fa-link" aria-hidden="true"></i></a>7</h1>
+                                <h2 id="&#x89E3;&#x538B;&#x5E8F;&#x5217;"><a name="&#x89E3;&#x538B;&#x5E8F;&#x5217;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x538B;&#x5E8F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x89E3;&#x538B;&#x5E8F;&#x5217;" class="plugin-anchor" href="#&#x89E3;&#x538B;&#x5E8F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a><center>&#x89E3;&#x538B;&#x5E8F;&#x5217;</center></h2>
+<h3 id="&#x4E00;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6848;&#x4F8B;"><a name="&#x4E00;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6848;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E00;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6848;&#x4F8B;" class="plugin-anchor" href="#&#x4E00;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6848;&#x4F8B;</h3>
+<ul>
+<li><p>1&#x3001;<code>set</code>&#x96C6;&#x5408;&#x7684;</p>
+<pre><code class="lang-py">a, b, c = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>}
+print(a, b, c)
+</code></pre>
+</li>
+<li><p>2&#x3001;&#x5B57;&#x7B26;&#x7684;</p>
+<pre><code class="lang-py">a,b,c,d,e=<span class="hljs-string">&apos;hello&apos;</span>
+</code></pre>
+</li>
+<li><p>3&#x3001;&#x5143;&#x7EC4;&#x7684;</p>
+<pre><code class="lang-py">d, e, f = (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+print(d, e, f)
+</code></pre>
+</li>
+<li><p>4&#x3001;&#x5217;&#x8868;&#x7684;</p>
+<pre><code class="lang-py">g, h = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]
+print(g, h)
+</code></pre>
+</li>
+<li><p>5&#x3001;&#x4EA4;&#x6362;&#x4F4D;&#x7F6E;</p>
+<pre><code class="lang-py">f1=<span class="hljs-number">1</span>
+f2=<span class="hljs-number">2</span>
+f1,f2=f2,f1
+</code></pre>
+</li>
+<li><p>6&#x3001;&#x5F53;&#x5DE6;&#x8FB9;&#x53C2;&#x6570;&#x5C11;&#x4E8E;&#x53F3;&#x8FB9;&#x5143;&#x7D20;&#x4E2A;&#x6570;(&#x96C6;&#x5408;&#x3001;&#x5143;&#x7EC4;)</p>
+<pre><code class="lang-py">a, *_, c = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]
+a, *b, c = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>}
+</code></pre>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -1024,7 +1044,7 @@
                 </a>
                 
                 
-                <a href="8.html" class="navigation navigation-next " aria-label="Next page: 8.解压序列(解包)">
+                <a href="../chapter03/1.html" class="navigation navigation-next " aria-label="Next page: 第三章: 函数的进阶">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1035,7 +1055,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.数据类型转换","level":"1.3.7","depth":2,"next":{"title":"8.解压序列(解包)","level":"1.3.8","depth":2,"path":"chapter02/8.md","ref":"chapter02/8.md","articles":[]},"previous":{"title":"6.集合类型","level":"1.3.6","depth":2,"path":"chapter02/6.md","ref":"chapter02/6.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","toggle-chapters","disqus","livereload"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/kuangshp/"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.jpeg","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"kuangshp","repo":"python-base","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"水痕","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python基础到进阶","language":"zh-hans","links":{"sidebar":{"我的CSDN博客":"https://blog.csdn.net/kuangshp128"}},"gitbook":"3.2.3","description":"一本通俗易懂的python基础到进阶教程"},"file":{"path":"chapter02/7.md","mtime":"2018-06-19T08:47:09.857Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-25T08:23:45.685Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.解压序列(解包)","level":"1.3.7","depth":2,"next":{"title":"第三章: 函数的进阶","level":"1.4","depth":1,"path":"chapter03/1.md","ref":"chapter03/1.md","articles":[{"title":"1.数学函数及python函数的概念","level":"1.4.1","depth":2,"path":"chapter03/1.md","ref":"chapter03/1.md","articles":[]},{"title":"2.函数的认识","level":"1.4.2","depth":2,"path":"chapter03/2.md","ref":"chapter03/2.md","articles":[]},{"title":"3.嵌套函数","level":"1.4.3","depth":2,"path":"chapter03/3.md","ref":"chapter03/3.md","articles":[]},{"title":"4.高阶函数","level":"1.4.4","depth":2,"path":"chapter03/4.md","ref":"chapter03/4.md","articles":[]},{"title":"5.装饰器","level":"1.4.5","depth":2,"path":"chapter03/5.md","ref":"chapter03/5.md","articles":[]},{"title":"6.迭代器","level":"1.4.6","depth":2,"path":"chapter03/6.md","ref":"chapter03/6.md","articles":[]},{"title":"7.生成器","level":"1.4.7","depth":2,"path":"chapter03/7.md","ref":"chapter03/7.md","articles":[]},{"title":"8.内置函数","level":"1.4.8","depth":2,"path":"chapter03/8.md","ref":"chapter03/8.md","articles":[]}]},"previous":{"title":"6.集合类型","level":"1.3.6","depth":2,"path":"chapter02/6.md","ref":"chapter02/6.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","toggle-chapters","disqus","livereload"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/kuangshp/"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.jpeg","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"kuangshp","repo":"python-base","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"水痕","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python基础到进阶","language":"zh-hans","links":{"sidebar":{"我的CSDN博客":"https://blog.csdn.net/kuangshp128"}},"gitbook":"3.2.3","description":"一本通俗易懂的python基础到进阶教程"},"file":{"path":"chapter02/7.md","mtime":"2018-06-25T10:33:35.807Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-25T08:23:45.685Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
