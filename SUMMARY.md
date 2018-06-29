@@ -70,6 +70,7 @@
   * [5.MySQL表约束](chapter10/5.md)
   * [6.MySQL一对多的操作](chapter10/6.md)
   * [7.MySQL多对多的操作](chapter10/7.md)
+  * [8.PyMySQL的使用](chapter10/8.md)
 * [第十一章: 数据库Mongodb的认识]()
 * [第十二章: 内存数据库redis的认识]()
 
